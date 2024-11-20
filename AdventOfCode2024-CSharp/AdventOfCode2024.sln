@@ -2,6 +2,26 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E152AE8A-3F8B-42EE-9A6B-11DF27E9DED1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.globalconfig = .globalconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D2F2F0E6-90CF-4666-ADA3-AE3AEBA7E5E5}"
+	ProjectSection(SolutionItems) = preProject
+		tests\.editorconfig = tests\.editorconfig
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
