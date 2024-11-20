@@ -2,6 +2,11 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{A5D24224-3FF7-4774-93DD-A02A49E871C8}"
+	ProjectSection(SolutionItems) = preProject
+		assets\input.txt = assets\input.txt
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E152AE8A-3F8B-42EE-9A6B-11DF27E9DED1}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
