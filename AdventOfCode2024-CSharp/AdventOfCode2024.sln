@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D2F2F0E6
 		tests\Directory.Build.props = tests\Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2024.Puzzles", "src\AdventOfCode2024.Puzzles\AdventOfCode2024.Puzzles.csproj", "{5F18E696-0BAD-4D84-9217-B8DA04156EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Puzzles", "tests\Tests.Puzzles\Tests.Puzzles.csproj", "{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +33,19 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F18E696-0BAD-4D84-9217-B8DA04156EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F18E696-0BAD-4D84-9217-B8DA04156EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F18E696-0BAD-4D84-9217-B8DA04156EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F18E696-0BAD-4D84-9217-B8DA04156EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F18E696-0BAD-4D84-9217-B8DA04156EF8} = {D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}
+		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8} = {D2F2F0E6-90CF-4666-ADA3-AE3AEBA7E5E5}
 	EndGlobalSection
 EndGlobal
