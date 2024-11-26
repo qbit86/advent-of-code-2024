@@ -18,28 +18,3 @@ out/
 
 ### Kotlin ###
 .kotlin
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/.nb-gradle/
-/dist/
-/nbbuild/
-/nbdist/
-/nbproject/private/
-
-### VS Code ###
-.vscode/
-
-### Mac OS ###
-.DS_Store
