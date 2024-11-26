@@ -1,7 +1,2 @@
-.artifacts/
-.vs/
+.DS_Store
 .vscode/
-*.suo
-*.user
-bin/
-obj/
