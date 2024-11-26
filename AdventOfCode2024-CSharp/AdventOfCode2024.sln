@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2024.Puzzles", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Puzzles", "tests\Tests.Puzzles\Tests.Puzzles.csproj", "{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2024.App", "src\AdventOfCode2024.App\AdventOfCode2024.App.csproj", "{9C42BA79-B69C-48E4-908F-395D763514FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,9 +50,14 @@ Global
 		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C42BA79-B69C-48E4-908F-395D763514FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C42BA79-B69C-48E4-908F-395D763514FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C42BA79-B69C-48E4-908F-395D763514FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C42BA79-B69C-48E4-908F-395D763514FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5F18E696-0BAD-4D84-9217-B8DA04156EF8} = {D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}
 		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8} = {D2F2F0E6-90CF-4666-ADA3-AE3AEBA7E5E5}
+		{9C42BA79-B69C-48E4-908F-395D763514FA} = {D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}
 	EndGlobalSection
 EndGlobal
