@@ -9,5 +9,11 @@ object PartTwoPuzzle {
         return solve(lines)
     }
 
-    private fun <TRows : List<String>> solve(rows: TRows): Long = TODO()
+    private fun <TRows : List<String>> solve(rows: TRows): Long {
+        val (leftNumbers, rightNumbers) = Helpers.parse(rows)
+
+        val countByNumber = rightNumbers.groupingBy { it }.eachCount()
+        fun singleSimilarityScore(number: Int): Long = number.toLong() * countByNumber.getOrDefault(number, 0)
+        return leftNumbers.sumOf(::singleSimilarityScore)
+    }
 }

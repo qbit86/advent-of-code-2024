@@ -9,5 +9,10 @@ object PartOnePuzzle {
         return solve(lines)
     }
 
-    private fun <TRows : List<String>> solve(rows: TRows): Long = TODO()
+    private fun <TRows : List<String>> solve(rows: TRows): Long {
+        val (leftNumbers, rightNumbers) = Helpers.parse(rows)
+
+        val distances = leftNumbers.sorted().zip(rightNumbers.sorted()) { left, right -> kotlin.math.abs(left.toLong() - right) }
+        return distances.sum()
+    }
 }
