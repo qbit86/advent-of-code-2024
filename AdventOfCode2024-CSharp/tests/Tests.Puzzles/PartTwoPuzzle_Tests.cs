@@ -7,7 +7,7 @@ public sealed class PartTwoPuzzle_Tests
     [InlineData("sample.txt", long.MinValue)]
     internal void Solve(string inputPath, long expected)
     {
-        long actual = PartOnePuzzle.Solve(inputPath);
+        long actual = PartTwoPuzzle.Solve(inputPath);
         Assert.Equal(expected, actual);
     }
 }
