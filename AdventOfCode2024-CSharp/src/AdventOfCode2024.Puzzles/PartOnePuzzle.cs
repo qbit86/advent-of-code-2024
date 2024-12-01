@@ -23,7 +23,7 @@ public static class PartOnePuzzle
         Array.Sort(leftNumbers);
         Array.Sort(rightNumbers);
 
-        var distances = leftNumbers.Zip(rightNumbers, (left, right) => long.Abs(left - right));
+        var distances = leftNumbers.Zip(rightNumbers, (left, right) => Math.Abs((long)left - right));
         return distances.Sum();
     }
 }

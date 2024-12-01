@@ -22,9 +22,8 @@ public static class PartTwoPuzzle
         (int[] leftNumbers, int[] rightNumbers) = Helpers.Parse(rows);
 
         var countByNumber = rightNumbers.CountBy(it => it).ToFrozenDictionary();
-        return leftNumbers.Aggregate(0L, AggregateFunc);
+        return leftNumbers.Sum(SingleSimilarityScore);
 
-        long AggregateFunc(long acc, int number) =>
-            acc + Math.BigMul(number, countByNumber.GetValueOrDefault(number, 0));
+        long SingleSimilarityScore(int number) => Math.BigMul(number, countByNumber.GetValueOrDefault(number, 0));
     }
 }
