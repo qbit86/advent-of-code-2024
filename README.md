@@ -18,6 +18,6 @@ var countByNumber = rightNumbers.CountBy(it => it).ToFrozenDictionary();
 Tried the [Math.BigMul](https://learn.microsoft.com/en-us/dotnet/api/system.math.bigmul?view=net-9.0#system-math-bigmul(system-int32-system-int32)) API for the first time.
 
 ```cs
-long AggregateFunc(long acc, int number) =>
-    acc + Math.BigMul(number, countByNumber.GetValueOrDefault(number, 0));
+long SingleSimilarityScore(int number) =>
+    Math.BigMul(number, countByNumber.GetValueOrDefault(number, 0));
 ```
