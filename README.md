@@ -21,3 +21,7 @@ Tried the [Math.BigMul](https://learn.microsoft.com/en-us/dotnet/api/system.math
 long SingleSimilarityScore(int number) =>
     Math.BigMul(number, countByNumber.GetValueOrDefault(number, 0));
 ```
+
+# [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)
+
+[feature/02-red-nosed-reports](https://github.com/qbit86/advent-of-code-2024/tree/feature/02-red-nosed-reports)
