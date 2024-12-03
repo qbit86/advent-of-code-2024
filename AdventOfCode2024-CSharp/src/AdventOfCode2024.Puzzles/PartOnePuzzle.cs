@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace AdventOfCode2024;
 
@@ -10,7 +9,7 @@ public static class PartOnePuzzle
     public static long Solve(string path)
     {
         ArgumentNullException.ThrowIfNull(path);
-        string[] lines = File.ReadAllLines(path, Encoding.UTF8);
+        string[] lines = File.ReadAllLines(path);
         return Solve(lines);
     }
 
