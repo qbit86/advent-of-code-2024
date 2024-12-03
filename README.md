@@ -29,3 +29,19 @@ long SingleSimilarityScore(int number) =>
 ## [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)
 
 [feature/03-mull-it-over](https://github.com/qbit86/advent-of-code-2024/tree/feature/03-mull-it-over)
+
+> The .NET SDK (version 7 and later) includes a source generator that recognizes the `GeneratedRegexAttribute` attribute on a partial method that returns `Regex`.
+>
+> — https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-source-generators
+
+```cs
+private static Regex MulRegex => s_regex ??= CreateRegex();
+
+[GeneratedRegex(@"mul\((\d{1,3}),(\d{1,3})\)",
+    RegexOptions.Compiled | RegexOptions.CultureInvariant)]
+private static partial Regex CreateRegex();
+```
+
+```cs
+var matches = MulRegex.Matches(line);
+```
