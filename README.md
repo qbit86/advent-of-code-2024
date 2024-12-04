@@ -45,3 +45,7 @@ private static partial Regex CreateRegex();
 ```cs
 var matches = MulRegex.Matches(line);
 ```
+
+## [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)
+
+[feature/04-ceres-search](https://github.com/qbit86/advent-of-code-2024/tree/feature/04-ceres-search)
