@@ -53,3 +53,34 @@ var matches = MulRegex.Matches(line);
 ## [Day 5: Print Queue](https://adventofcode.com/2024/day/5)
 
 [feature/05-print-queue](https://github.com/qbit86/advent-of-code-2024/tree/feature/05-print-queue)
+
+The whole input can contain cycles.
+But updates seem to be DAGs, otherwise there is no solution.
+It looks like the second part of the puzzle can be solved just by sorting pages within updates with a partial and non-transitive comparer for particular inputs.
+But in general you need a topological sorting of the pages.
+
+```cs
+var outNeighborsMap = edges.ToLookup(it => it.Tail, it => it.Head)
+    .ToFrozenDictionary(it => it.Key, it => it.ToFrozenSet());
+
+...
+
+List<int> Sort(IReadOnlyList<int> pages)
+{
+    List<int> sortedPages = [];
+    var inducedOutNeighborsMap = pages.ToFrozenDictionary(
+        it => it, it => outNeighborsMap.GetValueOrDefault(it, []).Intersect(pages).ToFrozenSet());
+    var graph = ReadOnlyAdjacencyGraph<int>.FromFrozenSets(inducedOutNeighborsMap);
+    var handler = CreateDfsHandler(graph);
+    handler.FinishVertex += (_, v) => sortedPages.Add(v);
+    EagerDfs<int, FrozenSet<int>.Enumerator>.Traverse(graph, pages, handler);
+    sortedPages.Reverse();
+    return sortedPages;
+}
+```
+
+Here I used a type inference trick, since the actual types of the `handler` and the `graph` are very complicated.
+
+```cs
+private static DfsHandler<int, Endpoints<int>, TGraph> CreateDfsHandler<TGraph>(TGraph _) => new();
+```
