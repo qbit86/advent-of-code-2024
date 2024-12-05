@@ -49,3 +49,7 @@ var matches = MulRegex.Matches(line);
 ## [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)
 
 [feature/04-ceres-search](https://github.com/qbit86/advent-of-code-2024/tree/feature/04-ceres-search)
+
+## [Day 5: Print Queue](https://adventofcode.com/2024/day/5)
+
+[feature/05-print-queue](https://github.com/qbit86/advent-of-code-2024/tree/feature/05-print-queue)
