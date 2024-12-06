@@ -84,3 +84,21 @@ Here I used a type inference trick, since the actual types of the `handler` and 
 ```cs
 private static DfsHandler<int, Endpoints<int>, TGraph> CreateDfsHandler<TGraph>(TGraph _) => new();
 ```
+
+## [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6)
+
+[feature/06-guard-gallivant](https://github.com/qbit86/advent-of-code-2024/tree/feature/06-guard-gallivant)
+
+Tried the API for `Vector128<int>` to rotate the direction (<i>x</i>, <i>y</i>) ↦ (<i>y</i>, −<i>x</i>):
+
+```cs
+using V = Vector128<int>;
+
+...
+
+private static V Rotate(V direction)
+{
+    var temp = Vector128.Shuffle(direction, Vector128.Create(1, 0, 2, 3));
+    return temp * Vector128.Create(1, -1, 1, 1);
+}
+```
