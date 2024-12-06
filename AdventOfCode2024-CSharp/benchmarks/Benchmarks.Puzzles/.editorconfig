@@ -1,0 +1,11 @@
+[Program.cs]
+csharp_style_prefer_top_level_statements = false # Convert to top-level statements (IDE0210)
+dotnet_diagnostic.IDE0022.severity = none # Use expression body for methods
+dotnet_diagnostic.IDE0160.severity = none # Use block-scoped namespace
+
+[*.cs]
+dotnet_diagnostic.CA1515.severity = none # Consider making public types internal
+dotnet_diagnostic.IDE0008.severity = none # 'var' preferences
+dotnet_diagnostic.IDE0011.severity = none # Add braces
+dotnet_diagnostic.IDE0048.severity = none # Parentheses preferences
+dotnet_diagnostic.IDE0065.severity = none # 'using' directive placement (IDE0065)

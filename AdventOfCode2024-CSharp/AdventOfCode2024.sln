@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Puzzles", "tests\Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2024.App", "src\AdventOfCode2024.App\AdventOfCode2024.App.csproj", "{9C42BA79-B69C-48E4-908F-395D763514FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{D5370D53-2ECE-4622-9C9D-3E7E7621BA8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks.Puzzles", "benchmarks\Benchmarks.Puzzles\Benchmarks.Puzzles.csproj", "{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,10 +59,15 @@ Global
 		{9C42BA79-B69C-48E4-908F-395D763514FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C42BA79-B69C-48E4-908F-395D763514FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C42BA79-B69C-48E4-908F-395D763514FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5F18E696-0BAD-4D84-9217-B8DA04156EF8} = {D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}
 		{C24D2819-96B2-4794-9AEA-CBCC0C52BBF8} = {D2F2F0E6-90CF-4666-ADA3-AE3AEBA7E5E5}
 		{9C42BA79-B69C-48E4-908F-395D763514FA} = {D150E321-5F7C-4E6C-9F1C-2944AD40DDFD}
+		{B2BEEFEF-ADD7-4B52-ADAC-5350916A78DA} = {D5370D53-2ECE-4622-9C9D-3E7E7621BA8F}
 	EndGlobalSection
 EndGlobal
