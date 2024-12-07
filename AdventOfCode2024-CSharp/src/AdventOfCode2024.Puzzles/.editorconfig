@@ -1,2 +1,5 @@
+[Node.cs]
+dotnet_diagnostic.IDE0051.severity = none # Remove unused private member
+
 [Part*Puzzle.cs]
 resharper_unused_parameter_local_highlighting = none # UnusedParameter.Local
