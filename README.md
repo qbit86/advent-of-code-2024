@@ -106,3 +106,22 @@ private static V Rotate(V direction)
 ## [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7)
 
 [feature/07-bridge-repair](https://github.com/qbit86/advent-of-code-2024/tree/feature/07-bridge-repair)
+
+Used depth-first search.
+
+```cs
+internal readonly record struct Equation(long TestValue, int[] Numbers) { … }
+
+internal readonly record struct Node(long RunningTotalInclusive, int Index);
+
+…
+
+private static bool CanBeTrue(Equation equation)
+{
+    Node source = new(equation.Numbers[0], 0);
+    Graph graph = new(equation);
+    var nodes = EnumerableDfs<Node>.EnumerateVertices(graph, source);
+    int lastIndexInclusive = equation.Numbers.Length - 1;
+    return nodes.Any(it => it.RunningTotalInclusive == equation.TestValue && it.Index == lastIndexInclusive);
+}
+```
