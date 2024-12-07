@@ -102,3 +102,7 @@ private static V Rotate(V direction)
     return temp * Vector128.Create(1, -1, 1, 1);
 }
 ```
+
+## [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7)
+
+[feature/07-bridge-repair](https://github.com/qbit86/advent-of-code-2024/tree/feature/07-bridge-repair)
