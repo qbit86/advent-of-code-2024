@@ -125,3 +125,7 @@ private static bool CanBeTrue(Equation equation)
     return nodes.Any(it => it.RunningTotalInclusive == equation.TestValue && it.Index == lastIndexInclusive);
 }
 ```
+
+## [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8)
+
+[feature/08-resonant-collinearity](https://github.com/qbit86/advent-of-code-2024/tree/feature/08-resonant-collinearity)
