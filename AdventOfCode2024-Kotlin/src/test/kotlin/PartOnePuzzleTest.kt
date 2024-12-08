@@ -9,7 +9,7 @@ class PartOnePuzzleTest {
 
     @ParameterizedTest
     @MethodSource("inputProvider")
-    fun solve(inputPath: String, expected: Long) {
+    fun solve_ShouldBeEqual(inputPath: String, expected: Long) {
         assertEquals(expected, PartOnePuzzle.solve(inputPath))
     }
 

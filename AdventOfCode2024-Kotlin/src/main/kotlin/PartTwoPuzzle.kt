@@ -4,10 +4,10 @@ import java.io.File
 
 object PartTwoPuzzle {
     fun solve(path: String): Long {
-        require(path.isNotEmpty()) { "Path cannot be null or empty" }
+        require(path.isNotEmpty()) { "Path cannot be null or empty." }
         val lines = File(path).readLines()
         return solve(lines)
     }
 
-    private fun <TRows : List<String>> solve(rows: TRows): Long = TODO()
+    private fun solve(rows: List<String>): Long = TODO()
 }

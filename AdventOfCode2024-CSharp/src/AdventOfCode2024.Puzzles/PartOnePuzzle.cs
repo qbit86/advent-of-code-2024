@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace AdventOfCode2024;
@@ -13,6 +12,5 @@ public static class PartOnePuzzle
         return Solve(lines);
     }
 
-    private static long Solve<TRows>(TRows rows)
-        where TRows : IReadOnlyList<string> => throw new NotImplementedException();
+    private static long Solve(string[] rows) => throw new NotImplementedException();
 }
