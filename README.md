@@ -129,3 +129,7 @@ private static bool CanBeTrue(Equation equation)
 ## [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8)
 
 [feature/08-resonant-collinearity](https://github.com/qbit86/advent-of-code-2024/tree/feature/08-resonant-collinearity)
+
+> An antinode occurs at any grid position exactly in line with at least two antennas of the same frequency, regardless of distance.
+
+It's not clear whether we should divide the direction vector on the GCD of its components to get the step vector.
