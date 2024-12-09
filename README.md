@@ -133,3 +133,7 @@ private static bool CanBeTrue(Equation equation)
 > An antinode occurs at any grid position exactly in line with at least two antennas of the same frequency, regardless of distance.
 
 It's not clear whether we should divide the direction vector on the GCD of its components to get the step vector.
+
+## [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9)
+
+[feature/09-disk-fragmenter](https://github.com/qbit86/advent-of-code-2024/tree/feature/09-disk-fragmenter)
