@@ -137,3 +137,14 @@ It's not clear whether we should divide the direction vector on the GCD of its c
 ## [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9)
 
 [feature/09-disk-fragmenter](https://github.com/qbit86/advent-of-code-2024/tree/feature/09-disk-fragmenter)
+
+The basic data structure for this puzzle is a double-ended queue of block spans.
+
+```cs
+internal readonly record struct BlockSpan(int Id, int Start, int Length)
+{
+    internal bool IsFile => Id >= 0;
+
+    internal bool IsFree => Id < 0;
+}
+```
