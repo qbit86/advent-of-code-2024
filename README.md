@@ -152,3 +152,7 @@ internal readonly record struct BlockSpan(int Id, int Start, int Length)
 ## [Day 10: Hoof It](https://adventofcode.com/2024/day/10)
 
 [feature/10-hoof-it](https://github.com/qbit86/advent-of-code-2024/tree/feature/10-hoof-it)
+
+Depth-first search and dynamic programming.
+The only trick is to share the cache per trailhead, not per pair (trailhead, destination).
+To achieve this, I traversed the topographic map forwards to find the trail ends for each trailhead, then backwards during the “dynamic” part.
