@@ -17,6 +17,11 @@
   <ItemGroup>
     <None Include="$(AdventOfCodeSolutionDir)../assets/input.txt" CopyToOutputDirectory="PreserveNewest" />
     <None Include="$(AdventOfCodeSolutionDir)../assets/sample.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/sample-2.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/sample-3.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/sample-4.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/sample-5.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/sample-6.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
