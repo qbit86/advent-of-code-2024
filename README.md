@@ -148,3 +148,7 @@ internal readonly record struct BlockSpan(int Id, int Start, int Length)
     internal bool IsFree => Id < 0;
 }
 ```
+
+## [Day 10: Hoof It](https://adventofcode.com/2024/day/10)
+
+[feature/10-hoof-it](https://github.com/qbit86/advent-of-code-2024/tree/feature/10-hoof-it)
