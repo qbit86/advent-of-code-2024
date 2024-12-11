@@ -1,2 +1,5 @@
+[Node.cs]
+resharper_not_accessed_positional_property_global_highlighting = none # NotAccessedPositionalProperty.Global
+
 [Part*Puzzle.cs]
 resharper_unused_parameter_local_highlighting = none # UnusedParameter.Local
