@@ -160,3 +160,9 @@ To achieve this, I traversed the topographic map forwards to find the trail ends
 ## [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11)
 
 [feature/11-plutonian-pebbles](https://github.com/qbit86/advent-of-code-2024/tree/feature/11-plutonian-pebbles)
+
+Dynamic programming using the cache with the `Node` as the key.
+
+```cs
+internal readonly record struct Node(long Stone, int RemainingBlinks);
+```
