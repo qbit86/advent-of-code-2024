@@ -170,3 +170,19 @@ internal readonly record struct Node(long Stone, int RemainingBlinks);
 ## [Day 12: Garden Groups](https://adventofcode.com/2024/day/12)
 
 [feature/12-garden-groups](https://github.com/qbit86/advent-of-code-2024/tree/feature/12-garden-groups)
+
+The most difficult part is dealing with the perimeter.
+From the following graph definition, I filter all bound edges that "stick out" for each region (connected component).
+
+```cs
+public IEnumerator<V> EnumerateOutNeighbors(V vertex)
+{
+    if (!_grid.TryGetValue(vertex, out char kind) || kind != _kind)
+        yield break;
+    foreach (var direction in Helpers.Directions)
+        yield return vertex + direction; // No bound checks here!
+}
+```
+
+Then I build a meta-graph whose nodes are such bound edges pointing out of regions.
+And a side of a region is a connected component in such a meta-graph.
