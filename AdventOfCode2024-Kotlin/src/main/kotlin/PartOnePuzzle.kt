@@ -5,9 +5,7 @@ import java.io.File
 object PartOnePuzzle {
     fun solve(path: String): Long {
         require(path.isNotEmpty()) { "Path cannot be null or empty." }
-        val lines = File(path).readLines()
-        return solve(lines)
+        val line = File(path).readText().trimEnd()
+        return Helpers.solve(line, 25)
     }
-
-    private fun solve(rows: List<String>): Long = TODO()
 }
