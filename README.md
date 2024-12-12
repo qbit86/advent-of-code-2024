@@ -166,3 +166,7 @@ Dynamic programming using the cache with the `Node` as the key.
 ```cs
 internal readonly record struct Node(long Stone, int RemainingBlinks);
 ```
+
+## [Day 12: Garden Groups](https://adventofcode.com/2024/day/12)
+
+[feature/12-garden-groups](https://github.com/qbit86/advent-of-code-2024/tree/feature/12-garden-groups)
