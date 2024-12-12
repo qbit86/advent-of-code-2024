@@ -6,6 +6,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{A5D242
 	ProjectSection(SolutionItems) = preProject
 		assets\input.txt = ../assets/input.txt
 		assets\sample.txt = ../assets/sample.txt
+		assets\sample-2.txt = ../assets/sample-2.txt
+		assets\sample-3.txt = ../assets/sample-3.txt
+		assets\sample-4.txt = ../assets/sample-4.txt
+		assets\sample-5.txt = ../assets/sample-5.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E152AE8A-3F8B-42EE-9A6B-11DF27E9DED1}"

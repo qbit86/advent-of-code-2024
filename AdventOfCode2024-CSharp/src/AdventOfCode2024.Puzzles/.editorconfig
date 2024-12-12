@@ -1,2 +1,5 @@
 [Part*Puzzle.cs]
 resharper_unused_parameter_local_highlighting = none # UnusedParameter.Local
+
+[*.cs]
+dotnet_diagnostic.IDE0065.severity = none # 'using' directive placement (IDE0065)
