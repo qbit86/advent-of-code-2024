@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 
 namespace AdventOfCode2024;
 
@@ -8,9 +7,7 @@ public static class PartOnePuzzle
     public static long Solve(string path)
     {
         ArgumentNullException.ThrowIfNull(path);
-        string[] lines = File.ReadAllLines(path);
-        return Solve(lines);
+        var descriptions = Helpers.Parse(path);
+        return Helpers.ComputeTokens(descriptions);
     }
-
-    private static long Solve(string[] rows) => throw new NotImplementedException();
 }
