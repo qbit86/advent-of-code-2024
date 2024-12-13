@@ -186,3 +186,7 @@ public IEnumerator<V> EnumerateOutNeighbors(V vertex)
 
 Then I build a meta-graph whose nodes are such bound edges pointing out of regions.
 And a side of a region is a connected component in such a meta-graph.
+
+## [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13)
+
+[feature/13-claw-contraption](https://github.com/qbit86/advent-of-code-2024/tree/feature/13-claw-contraption)
