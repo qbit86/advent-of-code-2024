@@ -17,7 +17,12 @@ class PartOnePuzzleTest {
         @JvmStatic
         fun inputProvider(): Stream<Arguments> {
             return Stream.of(
-                Arguments.of("../assets/sample.txt", Long.MIN_VALUE)
+                Arguments.of("../assets/sample.txt", 480L),
+                Arguments.of("../assets/sample-2.txt", 280L),
+                Arguments.of("../assets/sample-3.txt", 0L),
+                Arguments.of("../assets/sample-4.txt", 200L),
+                Arguments.of("../assets/sample-5.txt", 0L),
+                Arguments.of("../assets/input.txt", 30413L)
             )
         }
     }
