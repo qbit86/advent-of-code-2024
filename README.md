@@ -190,3 +190,19 @@ And a side of a region is a connected component in such a meta-graph.
 ## [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13)
 
 [feature/13-claw-contraption](https://github.com/qbit86/advent-of-code-2024/tree/feature/13-claw-contraption)
+
+To solve a system of linear equations I use [Cramers's rule](https://en.wikipedia.org/wiki/Cramer%27s_rule).
+
+A fancy way of calculating the determinant:
+```cs
+using V = Vector128<long>;
+
+…
+
+private static long Det(V left, V right)
+{
+    var rightReordered = Vector128.Shuffle(right, Vector128.Create(1, 0));
+    var product = left * rightReordered;
+    return Vector128.Sum(Vector128.Create(1, -1) * product);
+}
+```
