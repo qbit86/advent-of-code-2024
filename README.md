@@ -206,3 +206,7 @@ private static long Det(V left, V right)
     return Vector128.Sum(Vector128.Create(1, -1) * product);
 }
 ```
+
+## [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14)
+
+[feature/14-restroom-redoubt](https://github.com/qbit86/advent-of-code-2024/tree/feature/14-restroom-redoubt)
