@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Intrinsics;
 
 namespace AdventOfCode2024;
 
@@ -19,7 +20,7 @@ internal static class Program
         }
         catch (NotImplementedException)
         {
-            return PartOnePuzzle.Solve(path);
+            return PartOnePuzzle.Solve(path, Vector128.Create(101L, 103L));
         }
     }
 }
