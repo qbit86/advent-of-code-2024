@@ -210,3 +210,7 @@ private static long Det(V left, V right)
 ## [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14)
 
 [feature/14-restroom-redoubt](https://github.com/qbit86/advent-of-code-2024/tree/feature/14-restroom-redoubt)
+
+I optimize the score, where the score is the number of robots with two other robots in their [Von Neumann neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood).
+The other idea was to optimize the score, defined as the information entropy of the robots' positions:
+$-\sum_{i} \Pr(x_i) \log_2 \Pr(x_i)$.
