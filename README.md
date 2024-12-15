@@ -218,3 +218,5 @@ $-\sum_{i} \Pr(x_i) \log_2 \Pr(x_i)$.
 ## [Day 15: Warehouse Woes](https://adventofcode.com/2024/day/15)
 
 [feature/15-warehouse-woes](https://github.com/qbit86/advent-of-code-2024/tree/feature/15-warehouse-woes)
+
+I ustilized `ImmutableHashSet<V>` for box positions to simplify the simulation.
