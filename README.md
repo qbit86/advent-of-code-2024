@@ -224,3 +224,10 @@ I ustilized `ImmutableHashSet<V>` for box positions to simplify the simulation.
 ## [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16)
 
 [feature/16-reindeer-maze](https://github.com/qbit86/advent-of-code-2024/tree/feature/16-reindeer-maze)
+
+The trick is to define a graph that operates not on tiles of the map, but instead on _nodes_, where the node is a pair (_tile_, _direction_).
+Each node then has three candidate edges: move, turn left, turn right.
+These edges are weighted, so we can apply Dijkstra's algorithm.
+
+For the second part, I define a reversed graph, and traverse from `E` to `S`.
+Then I count the nodes, for which the sum of their distances from the path endpoints is the known score.
