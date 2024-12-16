@@ -220,3 +220,7 @@ $-\sum_{i} \Pr(x_i) \log_2 \Pr(x_i)$.
 [feature/15-warehouse-woes](https://github.com/qbit86/advent-of-code-2024/tree/feature/15-warehouse-woes)
 
 I ustilized `ImmutableHashSet<V>` for box positions to simplify the simulation.
+
+## [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16)
+
+[feature/16-reindeer-maze](https://github.com/qbit86/advent-of-code-2024/tree/feature/16-reindeer-maze)
