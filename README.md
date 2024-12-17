@@ -231,3 +231,7 @@ These edges are weighted, so we can apply Dijkstra's algorithm.
 
 For the second part, I define a reversed graph, and traverse from `E` to `S`.
 Then I count the nodes, for which the sum of their distances from the path endpoints is the known score.
+
+## [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17)
+
+[feature/17-chronospatial-computer](https://github.com/qbit86/advent-of-code-2024/tree/feature/17-chronospatial-computer)
