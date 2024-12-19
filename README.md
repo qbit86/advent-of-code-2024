@@ -239,3 +239,7 @@ Then I count the nodes, for which the sum of their distances from the path endpo
 ## [Day 18: RAM Run](https://adventofcode.com/2024/day/18)
 
 [feature/18-ram-run](https://github.com/qbit86/advent-of-code-2024/tree/feature/18-ram-run)
+
+## [Day 19: Linen Layout](https://adventofcode.com/2024/day/19)
+
+[feature/19-linen-layout](https://github.com/qbit86/advent-of-code-2024/tree/feature/19-linen-layout)
