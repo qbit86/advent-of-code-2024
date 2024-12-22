@@ -15,8 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="$(AdventOfCodeSolutionDir)../assets/input.txt" CopyToOutputDirectory="PreserveNewest" />
-    <None Include="$(AdventOfCodeSolutionDir)../assets/sample.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(AdventOfCodeSolutionDir)../assets/*.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
