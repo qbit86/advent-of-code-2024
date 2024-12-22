@@ -243,3 +243,7 @@ Then I count the nodes, for which the sum of their distances from the path endpo
 ## [Day 19: Linen Layout](https://adventofcode.com/2024/day/19)
 
 [feature/19-linen-layout](https://github.com/qbit86/advent-of-code-2024/tree/feature/19-linen-layout)
+
+## [Day 20: Race Condition](https://adventofcode.com/2024/day/20)
+
+[feature/20-race-condition](https://github.com/qbit86/advent-of-code-2024/tree/feature/20-race-condition)
