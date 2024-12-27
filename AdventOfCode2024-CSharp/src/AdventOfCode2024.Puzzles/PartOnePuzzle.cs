@@ -5,12 +5,20 @@ namespace AdventOfCode2024;
 
 public static class PartOnePuzzle
 {
-    public static long Solve(string path)
+    public static string Solve(string path)
     {
         ArgumentNullException.ThrowIfNull(path);
         string[] lines = File.ReadAllLines(path);
-        return Solve(lines);
+        var values = Solve(lines);
+        return string.Join(',', values);
     }
 
-    private static long Solve(string[] rows) => throw new NotImplementedException();
+    private static PackedList Solve(string[] lines)
+    {
+        var info = Information.Create(lines);
+        State initialState = new(info.A, info.B, info.C, 0, PackedList.Empty);
+        StatelessSimulator simulator = new(info.Program);
+        var finalState = simulator.SimulateAllInstructions(initialState);
+        return finalState.Output;
+    }
 }
