@@ -236,6 +236,10 @@ Then I count the nodes, for which the sum of their distances from the path endpo
 
 [feature/17-chronospatial-computer](https://github.com/qbit86/advent-of-code-2024/tree/feature/17-chronospatial-computer)
 
+Tracing the program reveals that it is a simple loop with a single break.
+Each 3-bit value at the output depends on at most 10 bits of the current value of register A.
+This observation allows us to narrow our search using the backtracking technique instead of brute force.
+
 ## [Day 18: RAM Run](https://adventofcode.com/2024/day/18)
 
 [feature/18-ram-run](https://github.com/qbit86/advent-of-code-2024/tree/feature/18-ram-run)
