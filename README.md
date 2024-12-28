@@ -244,6 +244,8 @@ This observation allows us to narrow our search using the backtracking technique
 
 [feature/18-ram-run](https://github.com/qbit86/advent-of-code-2024/tree/feature/18-ram-run)
 
+Breadth-first search for pathfinding, and binary search to determine the first byte that will cut off the path to the exit.
+
 ## [Day 19: Linen Layout](https://adventofcode.com/2024/day/19)
 
 [feature/19-linen-layout](https://github.com/qbit86/advent-of-code-2024/tree/feature/19-linen-layout)
