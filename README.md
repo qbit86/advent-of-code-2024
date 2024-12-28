@@ -260,3 +260,7 @@ No need to traverse the modified graphs with “tunnels”.
 The racetrack has no branches.
 We can prebuild the distance map and the path.
 Then, for each position on the track, we enumerate its Von Neumann neighborhood as candidates for the end positions of the cheats, and compare the new Manhattan distance with the one stored in the fair distance map.
+
+## [Day 21: Keypad Conundrum](https://adventofcode.com/2024/day/21)
+
+[feature/21-keypad-conundrum](https://github.com/qbit86/advent-of-code-2024/tree/feature/21-keypad-conundrum)
