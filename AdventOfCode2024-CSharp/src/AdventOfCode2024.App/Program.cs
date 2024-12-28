@@ -15,11 +15,11 @@ internal static class Program
         const string path = "input.txt";
         try
         {
-            return PartTwoPuzzle.Solve(path);
+            return PartTwoPuzzle.Solve(path, 20, 100);
         }
         catch (NotImplementedException)
         {
-            return PartOnePuzzle.Solve(path);
+            return PartOnePuzzle.Solve(path, 100);
         }
     }
 }

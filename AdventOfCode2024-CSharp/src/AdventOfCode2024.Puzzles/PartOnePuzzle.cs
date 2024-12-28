@@ -5,12 +5,10 @@ namespace AdventOfCode2024;
 
 public static class PartOnePuzzle
 {
-    public static long Solve(string path)
+    public static long Solve(string path, int savedPicosecondsLowerBound)
     {
         ArgumentNullException.ThrowIfNull(path);
         string[] lines = File.ReadAllLines(path);
-        return Solve(lines);
+        return PartTwoPuzzle.Solve(lines, 2, savedPicosecondsLowerBound);
     }
-
-    private static long Solve(string[] rows) => throw new NotImplementedException();
 }
