@@ -250,6 +250,8 @@ Breadth-first search for pathfinding, and binary search to determine the first b
 
 [feature/19-linen-layout](https://github.com/qbit86/advent-of-code-2024/tree/feature/19-linen-layout)
 
+I solved it without using a [trie](https://en.wikipedia.org/wiki/Trie), just dynamic programming on offsets within the design sequence.
+
 ## [Day 20: Race Condition](https://adventofcode.com/2024/day/20)
 
 [feature/20-race-condition](https://github.com/qbit86/advent-of-code-2024/tree/feature/20-race-condition)
