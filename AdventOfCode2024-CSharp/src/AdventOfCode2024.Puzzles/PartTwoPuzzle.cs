@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 
 namespace AdventOfCode2024;
 
@@ -12,5 +13,11 @@ public static class PartTwoPuzzle
         return Solve(lines);
     }
 
-    private static long Solve(string[] rows) => throw new NotImplementedException();
+    private static long Solve(string[] rows)
+    {
+        var input = Input.Create(rows);
+        Worker worker = new(input.Patterns);
+        long result = input.Designs.Sum(it => worker.Solve(it));
+        return result;
+    }
 }
