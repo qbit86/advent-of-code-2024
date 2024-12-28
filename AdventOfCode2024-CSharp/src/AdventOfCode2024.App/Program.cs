@@ -6,20 +6,20 @@ internal static class Program
 {
     private static void Main()
     {
-        long answer = SolveSingle();
+        string answer = SolveSingle();
         Console.WriteLine(answer);
     }
 
-    private static long SolveSingle()
+    private static string SolveSingle()
     {
         const string path = "input.txt";
         try
         {
-            return PartTwoPuzzle.Solve(path);
+            return PartTwoPuzzle.Solve(path, 70, 1024);
         }
         catch (NotImplementedException)
         {
-            return PartOnePuzzle.Solve(path);
+            return PartOnePuzzle.Solve(path, 70, 1024);
         }
     }
 }

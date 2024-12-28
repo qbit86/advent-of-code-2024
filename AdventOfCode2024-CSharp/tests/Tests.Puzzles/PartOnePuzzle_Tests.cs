@@ -3,10 +3,11 @@
 public sealed class PartOnePuzzle_Tests
 {
     [Theory]
-    [InlineData("sample.txt", long.MinValue)]
-    internal void Solve_ShouldBeEqual(string inputPath, long expected)
+    [InlineData("sample.txt", 6, 12, 22L)]
+    [InlineData("input.txt", 70, 1024, 416L)]
+    internal void Solve_ShouldBeEqual(string inputPath, int upperBoundInclusive, int byteCount, long expected)
     {
-        long actual = PartOnePuzzle.Solve(inputPath);
+        long actual = PartOnePuzzle.SolveLong(inputPath, upperBoundInclusive, byteCount);
         Assert.Equal(expected, actual);
     }
 }

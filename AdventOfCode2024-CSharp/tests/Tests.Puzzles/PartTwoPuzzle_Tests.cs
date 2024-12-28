@@ -1,14 +1,24 @@
-#if false
+using System.Runtime.Intrinsics;
+
 namespace AdventOfCode2024;
+
+using V = Vector128<int>;
 
 public sealed class PartTwoPuzzle_Tests
 {
+    public static TheoryData<string, int, int, V> ShouldBeEqualTheoryData { get; } = CreateTheoryData();
+
     [Theory]
-    [InlineData("sample.txt", long.MinValue)]
-    internal void Solve_ShouldBeEqual(string inputPath, long expected)
+    [MemberData(nameof(ShouldBeEqualTheoryData), MemberType = typeof(PartTwoPuzzle_Tests))]
+    internal void Solve_ShouldBeEqual(string inputPath, int upperBoundInclusive, int byteCountLowerBound, V expected)
     {
-        long actual = PartTwoPuzzle.Solve(inputPath);
+        var actual = PartTwoPuzzle.SolveVector(inputPath, upperBoundInclusive, byteCountLowerBound);
         Assert.Equal(expected, actual);
     }
+
+    private static TheoryData<string, int, int, V> CreateTheoryData() => new()
+    {
+        { "sample.txt", 6, 12, Vector128.Create(6, 1, 0, 0) },
+        { "input.txt", 70, 1024, Vector128.Create(50, 23, 0, 0) }
+    };
 }
-#endif
