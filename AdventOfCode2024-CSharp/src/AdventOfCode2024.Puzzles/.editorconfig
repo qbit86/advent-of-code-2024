@@ -1,5 +1,9 @@
 [Part*Puzzle.cs]
 resharper_unused_parameter_local_highlighting = none # UnusedParameter.Local
 
+[PartTwoPuzzle.cs]
+resharper_iterator_never_returns_highlighting = none # IteratorNeverReturns
+resharper_possible_multiple_enumeration_highlighting = none # PossibleMultipleEnumeration
+
 [*.cs]
 dotnet_diagnostic.IDE0065.severity = none # 'using' directive placement (IDE0065)
