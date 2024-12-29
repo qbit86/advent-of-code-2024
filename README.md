@@ -264,3 +264,29 @@ Then, for each position on the track, we enumerate its Von Neumann neighborhood 
 ## [Day 21: Keypad Conundrum](https://adventofcode.com/2024/day/21)
 
 [feature/21-keypad-conundrum](https://github.com/qbit86/advent-of-code-2024/tree/feature/21-keypad-conundrum)
+
+Let's look at an execution trace from an example.
+```
+<vA<AA>>^AvAA<^A>A<v<A>>^AvA^A<vA>^A<v<A>^A>AAvA^A<v<A>A>^AAAvA<^A>A
+v<<A>>^A<A>AvA<^AA>A<vAAA>^A
+<A^A>^^AvvvA
+029A
+```
+
+For clarity, I have aligned all the button presses on the current level with the `A` keystrokes on the previous level.
+```
+<vA<AA>>^AvAA<^A>A<v<A>>^AvA^A<vA>^A<v<A>^A>AAvA^A<v<A>A>^AAAvA<^A>A
+  v <<   A >>  ^ A   <   A > A  v  A   <  ^ AA > A   < v  AAA >  ^ A
+         <       A       ^   A     >        ^^   A        vvv      A
+                 0           2                   9                 A
+```
+
+We measure the distance between the buttons on the keypad in terms of the number of button presses on the directional keypad of the previous level.
+It turns out that the shortest path in such a metric is never a zigzag, but always a corner: └ or ┐, ┌ or ┘.
+But which one?
+When you need to wrap around the gap on the keypad, you have only one option.
+Otherwise, the preferred order for each diagonal direction is
+- ↘: `v>` (is better than `>v`)
+- ↖: `<^` (is better than `^<`)
+- ↙: `<v` (is better than `v<`)
+- ↗: `^>` (is better than `>^`)
