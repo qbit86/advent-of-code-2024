@@ -286,10 +286,10 @@ It turns out that the shortest path in such a metric is never a zigzag, but alwa
 But which one?
 When you need to wrap around the gap on the keypad, you have only one option.
 Otherwise, the preferred order for each diagonal direction is
-- ↘: `v>` (is better than `>v`)
-- ↖: `<^` (is better than `^<`)
-- ↙: `<v` (is better than `v<`)
-- ↗: `^>` (is better than `>^`)
+- `↘`: `v>` (is better than `>v`)
+- `↖`: `<^` (is better than `^<`)
+- `↙`: `<v` (is better than `v<`)
+- `↗`: `^>` (is better than `>^`)
 
 ## [Day 22: Monkey Market](https://adventofcode.com/2024/day/22)
 
