@@ -294,3 +294,5 @@ Otherwise, the preferred order for each diagonal direction is
 ## [Day 22: Monkey Market](https://adventofcode.com/2024/day/22)
 
 [feature/22-monkey-market](https://github.com/qbit86/advent-of-code-2024/tree/feature/22-monkey-market)
+
+I used the MoreLINQ library for a sliding window of five elements.
