@@ -302,3 +302,13 @@ I used the MoreLINQ library for a sliding window of five elements.
 [feature/23-lan-party](https://github.com/qbit86/advent-of-code-2024/tree/feature/23-lan-party)
 
 The [Bron–Kerbosch algorithm](https://en.wikipedia.org/wiki/Bron%E2%80%93Kerbosch_algorithm) for finding the maximal clique in an undirected graph.
+
+## [Day 24: Crossed Wires](https://adventofcode.com/2024/day/24)
+
+[feature/24-crossed-wires](https://github.com/qbit86/advent-of-code-2024/tree/feature/24-crossed-wires)
+
+We need to find out which implicit rules are violated by which components of the malfunctioning [adder](https://en.wikipedia.org/wiki/Adder_(electronics)).
+- Each z-wire (except the last one) must be connected to an XOR gate.
+- Each OR gate must have its inputs connected to AND gates.
+- Each XOR gate must be connected to an x, y, or z-wire.
+- Each XOR gate whose output is a z-wire (except `z01`) must not have an input from an AND gate.
