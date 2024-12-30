@@ -6,11 +6,11 @@ internal static class Program
 {
     private static void Main()
     {
-        long answer = SolveSingle();
+        string answer = SolveSingle();
         Console.WriteLine(answer);
     }
 
-    private static long SolveSingle()
+    private static string SolveSingle()
     {
         const string path = "input.txt";
         try
