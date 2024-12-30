@@ -296,3 +296,9 @@ Otherwise, the preferred order for each diagonal direction is
 [feature/22-monkey-market](https://github.com/qbit86/advent-of-code-2024/tree/feature/22-monkey-market)
 
 I used the MoreLINQ library for a sliding window of five elements.
+
+## [Day 23: LAN Party](https://adventofcode.com/2024/day/23)
+
+[feature/23-lan-party](https://github.com/qbit86/advent-of-code-2024/tree/feature/23-lan-party)
+
+The [Bron–Kerbosch algorithm](https://en.wikipedia.org/wiki/Bron%E2%80%93Kerbosch_algorithm) for finding the maximal clique in an undirected graph.
