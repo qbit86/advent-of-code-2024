@@ -1,14 +1,12 @@
-#if false
 namespace AdventOfCode2024;
 
 public sealed class PartTwoPuzzle_Tests
 {
     [Theory]
-    [InlineData("sample.txt", long.MinValue)]
-    internal void Solve_ShouldBeEqual(string inputPath, long expected)
+    [InlineData("input.txt", "gjc,gvm,qjj,qsb,wmp,z17,z26,z39")]
+    internal void Solve_ShouldBeEqual(string inputPath, string expected)
     {
-        long actual = PartTwoPuzzle.Solve(inputPath);
+        string actual = PartTwoPuzzle.SolveString(inputPath);
         Assert.Equal(expected, actual);
     }
 }
-#endif
