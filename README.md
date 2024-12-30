@@ -312,3 +312,7 @@ We need to find out which implicit rules are violated by which components of the
 - Each OR gate must have its inputs connected to AND gates.
 - Each XOR gate must be connected to an x, y, or z-wire.
 - Each XOR gate whose output is a z-wire (except `z01`) must not have an input from an AND gate.
+
+## [Day 25: Code Chronicle](https://adventofcode.com/2024/day/25)
+
+[feature/25-code-chronicle](https://github.com/qbit86/advent-of-code-2024/tree/feature/25-code-chronicle)
